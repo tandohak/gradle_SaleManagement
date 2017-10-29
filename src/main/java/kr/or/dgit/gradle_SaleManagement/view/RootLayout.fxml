@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.dgit.gradle_SaleManagement.view.RootLayoutController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: #354052;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="53.0" layoutY="107.0" text="홍길동 사원" textFill="WHITE">
+               <font>
+                  <Font name="Noto Sans" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="28.0" layoutY="194.0" prefHeight="27.0" prefWidth="142.0" ripplerFill="#556680" text="사원관리" textAlignment="CENTER" textFill="#95989a">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Noto Sans Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="28.0" layoutY="221.0" prefHeight="27.0" prefWidth="142.0" ripplerFill="#edf2f5" text="업체 관리" textAlignment="CENTER" textFill="#95989a">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Noto Sans Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="28.0" layoutY="248.0" onAction="#handleShowProductManager" prefHeight="27.0" prefWidth="142.0" ripplerFill="#edf2f5" text="제품관리" textAlignment="CENTER" textFill="#95989a">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Noto Sans Italic" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
