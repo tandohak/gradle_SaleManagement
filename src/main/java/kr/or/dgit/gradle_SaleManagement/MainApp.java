@@ -12,21 +12,38 @@ import kr.or.dgit.gradle_SaleManagement.view.RootLayoutController;
 public class MainApp extends Application {
 	private Stage primaryStage;
 	private BorderPane rootLayout;
+	private RootLayoutController controller;
 
 	@Override
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
 		this.primaryStage.setTitle("영업 관리 프로그램");
 		
-		RootLayoutController controller = new RootLayoutController();
+		controller = new RootLayoutController();
 		controller.setMainApp(this);
 		
 		initRootLayout();
 
-		showSalesManager();
+//		showSalesManager();
 		
-		showProductManager();
+//		showProductManager();
 
+	}
+
+	public Stage getPrimaryStage() {
+		return primaryStage;
+	}
+
+	public void setPrimaryStage(Stage primaryStage) {
+		this.primaryStage = primaryStage;
+	}
+
+	public BorderPane getRootLayout() {
+		return rootLayout;
+	}
+
+	public void setRootLayout(BorderPane rootLayout) {
+		this.rootLayout = rootLayout;
 	}
 
 	public void showProductManager() {

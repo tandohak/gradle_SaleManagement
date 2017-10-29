@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.dgit.gradle_SaleManagement.view.RootLayoutController">
+<BorderPane fx:id="rootPane" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.dgit.gradle_SaleManagement.view.RootLayoutController">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: #354052;" BorderPane.alignment="CENTER">
          <children>
