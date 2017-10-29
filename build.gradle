@@ -31,7 +31,10 @@ dependencies {
 	
 	// https://mvnrepository.com/artifact/org.mybatis/mybatis
 	compile group: 'org.mybatis', name: 'mybatis', version: '3.4.5'
-
+	
+	// https://mvnrepository.com/artifact/com.jfoenix/jfoenix
+	compile group: 'com.jfoenix', name: 'jfoenix', version: '1.9.1'
+	
 	 testImplementation 'junit:junit:4.12'
 }
 
