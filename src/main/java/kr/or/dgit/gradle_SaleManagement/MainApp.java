@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -11,7 +12,7 @@ import kr.or.dgit.gradle_SaleManagement.view.RootLayoutController;
 
 public class MainApp extends Application {
 	private Stage primaryStage;
-	private BorderPane rootLayout;
+	private Parent rootLayout;
 	private RootLayoutController controller;
 
 	@Override
@@ -38,7 +39,7 @@ public class MainApp extends Application {
 		this.primaryStage = primaryStage;
 	}
 
-	public BorderPane getRootLayout() {
+	public Parent getRootLayout() {
 		return rootLayout;
 	}
 
@@ -52,7 +53,7 @@ public class MainApp extends Application {
 			loader.setLocation(MainApp.class.getResource("view/ProductManagementView.fxml"));
 			BorderPane pane = (BorderPane) loader.load();
 
-			rootLayout.setCenter(pane);
+			
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -66,7 +67,7 @@ public class MainApp extends Application {
 			loader.setLocation(MainApp.class.getResource("view/SalesManagementView.fxml"));
 			BorderPane pane = (BorderPane) loader.load();
 			
-			rootLayout.setCenter(pane);
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -79,7 +80,8 @@ public class MainApp extends Application {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
 			rootLayout = (BorderPane) loader.load();
-
+			
+			
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
 			primaryStage.show();
